@@ -41,3 +41,9 @@ Transparency, Light-emitting materials, etc. have not have been tested/implement
 ## Background Colour
 
 You may change the background colour in `index.html`, where the `<head>` block contains the styling for the background
+
+## Don't want to add models with this process?
+
+If you find adding models through the instructions above tedious, you may additionally install the [glTF Tools Extension](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode) for VS Code.
+
+This one will allow you to preview glTF files much faster by clicking on the file and pressing a button on the top right!
