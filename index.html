@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta itemprop=name content="Three JS Experiment">
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 
+      for other colour: 
+      background-color: #FFFAE0;
+    -->
+    <style>
+      body {
+        background-color: #607BDA;
+      };
+    </style>
   </head>
   <body>
     <main class="text-white">
-      <div class="py-4 px-4 bg-black bg-opacity-60" id="message">
-        Hello there
-      </div>
+
     </main>
-
-    <canvas id="app" class="w-screen h-screen fixed z-[-100] top-0 left-0">
-
-    </canvas>
+    <div class="w-screen h-screen pointer-events-none top-0 left-0 z-[-100]">
+      <canvas id="app" class="w-full h-full fixed pointer-events-auto"></canvas>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

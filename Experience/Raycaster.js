@@ -1,3 +1,5 @@
+// * This scene should be left alone until we add functionality
+
 import * as THREE from 'three'
 import Experience from './Experience'
 
@@ -20,16 +22,16 @@ export default class Raycaster {
             )
             this.chairHitBox.position.set(.3, .25, .7)
             this.chairHitBox.rotation.y = Math.PI * .4
-            this.chairHitBox.visible = false
-            this.scene.add(this.chairHitBox)
+            this.chairHitBox.visible = true
+            // this.scene.add(this.chairHitBox)
 
             this.plantHitBox = new THREE.Mesh(
                 new THREE.BoxGeometry(.35, .55, .35),
                 this.hitBoxMaterial   
             )
             this.plantHitBox.position.set(-2.2, .35, 1)
-            this.plantHitBox.visible = false
-            this.scene.add(this.plantHitBox)
+            this.plantHitBox.visible = true
+            // this.scene.add(this.plantHitBox)
 
 
             this.windowHitBox = new THREE.Mesh(
@@ -37,8 +39,8 @@ export default class Raycaster {
                 this.hitBoxMaterial
             )
             this.windowHitBox.position.set(-.45, .61, -.35)
-            this.windowHitBox.visible = false
-            this.scene.add(this.windowHitBox)
+            this.windowHitBox.visible = true
+            // this.scene.add(this.windowHitBox)
 
             // raycaster
             this.raycaster = new THREE.Raycaster()
@@ -104,15 +106,15 @@ export default class Raycaster {
             }
 
             switch(this.selectedModel){
-                case this.chairHitBox:
-                    document.querySelector('#message').innerHTML = "Chair has been tapped"
-                    break;
-                case this.plantHitBox:
-                    document.querySelector('#message').innerHTML = "Plant has been tapped"
-                    break;
-                case this.windowHitBox:
-                    document.querySelector('#message').innerHTML = "Window has been tapped"
-                    break;
+                // case this.chairHitBox:
+                //     document.querySelector('#message').innerHTML = "Chair has been tapped"
+                //     break;
+                // case this.plantHitBox:
+                //     document.querySelector('#message').innerHTML = "Plant has been tapped"
+                //     break;
+                // case this.windowHitBox:
+                //     document.querySelector('#message').innerHTML = "Window has been tapped"
+                //     break;
             }
         }
     }

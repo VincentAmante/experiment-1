@@ -12,7 +12,7 @@ export default class Environment {
 
     setSunlight() {
         // Adds hard lighting, creates shadows
-        this.sunLight = new THREE.DirectionalLight('#ffffff', 3)
+        this.sunLight = new THREE.DirectionalLight('#ffffff', 1)
         this.sunLight.castShadow = true
         this.sunLight.shadow.camera.far = 20
 
@@ -23,7 +23,7 @@ export default class Environment {
         this.scene.add(this.sunLight)
 
         // Adds soft light to everything, most affects shadow light
-        this.ambientLight = new THREE.AmbientLight('#FF9999', .5)
+        this.ambientLight = new THREE.AmbientLight('#FF9999', 1.5)
         this.scene.add(this.ambientLight)
     }
 }

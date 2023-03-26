@@ -11,7 +11,7 @@ export default class Renderer
         this.scene = this.experience.scene
         this.camera = this.experience.camera
 
-        console.log(this.camera)
+        // console.log(this.camera)
         this.setInstance()
     }
 
@@ -20,7 +20,8 @@ export default class Renderer
         this.instance = new THREE.WebGLRenderer({
             canvas: this.canvas,
             antialias: true,
-            powerPreference: 'high-performance'
+            powerPreference: 'high-performance',
+            alpha: true
         })
 
         this.instance.physicallyCorrectLights = true
@@ -31,10 +32,6 @@ export default class Renderer
         this.instance.shadowMap.type = THREE.PCFSoftShadowMap
         this.instance.setSize(this.sizes.width, this.sizes.height)
         this.instance.setPixelRatio(Math.min(this.sizes.pixelRatio, 2))
-
-        
-        console.log('Renderer Instanced')
-        console.log(this.instance)
     }
 
     update(){

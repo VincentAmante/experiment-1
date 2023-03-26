@@ -7,13 +7,13 @@ export default class Room {
         this.scene = this.experience.scene
         this.resources = this.experience.resources
         this.room = this.resources.items.room
-        this.actualRoom = this.room.scene 
-        console.log(this.actualRoom)
+        this.actualRoom = this.room.scene
 
         this.setModel()
     }
 
     setModel(){
+        // Ensures everything properly interacts with shadows
         this.actualRoom.children.forEach((child) => {
             child.castShadow = true
             child.receiveShadow = true
@@ -26,6 +26,13 @@ export default class Room {
             }
         })
 
+        // Adds the scene
         this.scene.add(this.actualRoom)
+
+        // xyz
+        this.actualRoom.position.set(0, 0, 0)
+
+        // play with values to rotate
+        this.actualRoom.rotation.y = Math.PI * 0
     }
 }
