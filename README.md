@@ -16,7 +16,6 @@
 
 Please see [this video (@1:38:48)](https://www.youtube.com/watch?v=rxTb9ys834w&t=10980s) for instructions. Up until it starts talking about bundlers
   
-
 ## Adding Your Model
 
 1. Insert your model in `public/models/`
@@ -32,7 +31,8 @@ Please see [this video (@1:38:48)](https://www.youtube.com/watch?v=rxTb9ys834w&t
 
 ## Camera
 
-- The Camera from `Experience/Camera.js` has set limitations so you don't need to model everything, there's a comment that will point out what to remove if you wish to have free roam of the scene
+- The Camera from `Experience/Camera.js` has set limitations so you don't need to model everything
+- there's a comment that will point out what to remove if you wish to have free roam of the scene
 
 ## Adding New Features
 
