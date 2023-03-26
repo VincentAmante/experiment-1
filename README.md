@@ -14,7 +14,7 @@
 
 ## Exporting your model
 
-Please see [this video (@1:38:48)](https://youtu.be/rxTb9ys834w?t=5933) for instructions. Up until it starts talking about bundlers
+Please see [this video (@1:38:48)](https://youtu.be/rxTb9ys834w?t=5928) for instructions. Up until it starts talking about bundlers
   
 ## Adding Your Model
 
